@@ -2,14 +2,19 @@ import XCTest
 @testable import DeviceUtilKit
 
 final class DeviceUtilKitTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(DeviceUtilKit().text, "Hello, World!")
+    //test color1
+    
+    func testVersionEqual() {
+        let v = DeviceUtilKit().version
+        XCTAssertEqual(v, "0.1.0")
+    }
+    func testColorAppRedEqual() {
+        let c = DeviceUtil.colorFrom(hexStr : "FF0000")
+        XCTAssertEqual(c, .red)
     }
 
     static var allTests = [
-        ("testExample", testExample),
+        ("testVersionEqual", testVersionEqual),
+        ("testColorAppRedEqual", testColorAppRedEqual),
     ]
 }
