@@ -34,3 +34,4 @@ swift package generate-xcodeproj
 ### Deploy:
 
 - add tag to Github Repo. Ex: 0.1.1
+- in app project , open Xcode -> File -> Swift packages -> Add package Dependency
