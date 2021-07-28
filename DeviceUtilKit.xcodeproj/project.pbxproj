@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		ED73850926B19D760012BA36 /* DeviceViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73850826B19D760012BA36 /* DeviceViewUtil.swift */; };
 		ED73850B26B1A72B0012BA36 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73850A26B1A72B0012BA36 /* Color.swift */; };
+		ED73850D26B1A8AC0012BA36 /* DeviceUtilNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73850C26B1A8AC0012BA36 /* DeviceUtilNetworkingTests.swift */; };
 		OBJ_23 /* DeviceUtilKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DeviceUtilKit.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_41 /* DeviceUtilColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DeviceUtilColorTests.swift */; };
@@ -53,6 +54,7 @@
 		ED73850726B19C260012BA36 /* how_to_create.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = how_to_create.md; sourceTree = "<group>"; };
 		ED73850826B19D760012BA36 /* DeviceViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewUtil.swift; sourceTree = "<group>"; };
 		ED73850A26B1A72B0012BA36 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		ED73850C26B1A8AC0012BA36 /* DeviceUtilNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtilNetworkingTests.swift; sourceTree = "<group>"; };
 		OBJ_12 /* DeviceUtilColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtilColorTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_12 /* DeviceUtilColorTests.swift */,
+				ED73850C26B1A8AC0012BA36 /* DeviceUtilNetworkingTests.swift */,
 				OBJ_13 /* XCTestManifests.swift */,
 			);
 			name = DeviceUtilKitTests;
@@ -249,6 +252,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_41 /* DeviceUtilColorTests.swift in Sources */,
+				ED73850D26B1A8AC0012BA36 /* DeviceUtilNetworkingTests.swift in Sources */,
 				OBJ_42 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
