@@ -20,6 +20,12 @@ swift package generate-xcodeproj
 - 08 : 新增另一個 Scheme, Name=(package-nameTests), Target= (package-nameTests)
 - 09 : 刪除 Scheme name = (package-name-Package)
 - 10 : 確保留下來的兩個 Scheme 都在 shared 有打勾
+- 11 : move following file to "root of repo"
+  - 11-1: Package.swift
+  - 11-2: (package-name).xcodeproj
+  - 11-3: README.md
+  - 11-4: "Sources" Folder
+  - 11-5: "Tests" Folder
 
 ### Usage:
 
