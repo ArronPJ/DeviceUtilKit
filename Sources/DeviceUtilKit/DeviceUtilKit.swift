@@ -3,7 +3,7 @@ import UIKit //UIColor
 //
 public class DeviceUtilKit {
     //static let v_major
-    var version = "0.1.0"
+    var version = "0.1.1"
     
 }
 

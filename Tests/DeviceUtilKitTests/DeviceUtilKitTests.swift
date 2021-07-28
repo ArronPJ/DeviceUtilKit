@@ -6,7 +6,7 @@ final class DeviceUtilKitTests: XCTestCase {
     
     func testVersionEqual() {
         let v = DeviceUtilKit().version
-        XCTAssertEqual(v, "0.1.0")
+        XCTAssertEqual(v, "0.1.1")
     }
     func testColorAppRedEqual() {
         let c = DeviceUtil.colorFrom(hexStr : "FF0000")
