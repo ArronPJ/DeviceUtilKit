@@ -30,3 +30,6 @@ swift package generate-xcodeproj
 ### Usage:
 
 - Scheme=(xxxTests), 選一個模擬器, 按 CMD + U 用來單元測試
+
+### Deploy:
+
