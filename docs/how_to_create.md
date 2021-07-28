@@ -33,3 +33,4 @@ swift package generate-xcodeproj
 
 ### Deploy:
 
+- add tag to Github Repo. Ex: 0.1.1
