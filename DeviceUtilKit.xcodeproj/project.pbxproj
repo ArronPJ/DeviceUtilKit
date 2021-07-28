@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		ED73850926B19D760012BA36 /* DeviceViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73850826B19D760012BA36 /* DeviceViewUtil.swift */; };
 		OBJ_23 /* DeviceUtilKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DeviceUtilKit.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_41 /* DeviceUtilKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DeviceUtilKitTests.swift */; };
@@ -49,6 +50,7 @@
 		"DeviceUtilKit::DeviceUtilKit::Product" /* DeviceUtilKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeviceUtilKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DeviceUtilKit::DeviceUtilKitTests::Product" /* DeviceUtilKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DeviceUtilKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED73850726B19C260012BA36 /* how_to_create.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = how_to_create.md; sourceTree = "<group>"; };
+		ED73850826B19D760012BA36 /* DeviceViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewUtil.swift; sourceTree = "<group>"; };
 		OBJ_12 /* DeviceUtilKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtilKitTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* DeviceUtilKit.swift */,
+				ED73850826B19D760012BA36 /* DeviceViewUtil.swift */,
 			);
 			name = DeviceUtilKit;
 			path = Sources/DeviceUtilKit;
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				ED73850926B19D760012BA36 /* DeviceViewUtil.swift in Sources */,
 				OBJ_23 /* DeviceUtilKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

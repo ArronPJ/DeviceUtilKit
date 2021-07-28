@@ -6,15 +6,23 @@ final class DeviceUtilKitTests: XCTestCase {
     
     func testVersionEqual() {
         let v = DeviceUtilKit().version
-        XCTAssertEqual(v, "0.1.1")
+        XCTAssertEqual(v, "0.2.0")
     }
-    func testColorAppRedEqual() {
-        let c = DeviceUtil.colorFrom(hexStr : "FF0000")
-        XCTAssertEqual(c, .red)
+//    func testColorAppRedEqual() {
+//        //let c = DeviceUtil.colorFromHexString("#ff0000")
+//        let color = DeviceUtil.colorFrom(hex: "FF0000")
+//        XCTAssertEqual(color, .red)
+//    }
+    func testRazeColorEqual(){
+        //razeColor
+        let color1 = DeviceUtil.colorFrom(hex: "006736")
+        let color2 = DeviceUtil.razeColor
+        
+        XCTAssertEqual(color1, color2)
     }
 
     static var allTests = [
         ("testVersionEqual", testVersionEqual),
-        ("testColorAppRedEqual", testColorAppRedEqual),
+        ("testRazeColorEqual", testRazeColorEqual),
     ]
 }

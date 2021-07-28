@@ -3,7 +3,7 @@ import UIKit //UIColor
 //
 public class DeviceUtilKit {
     //static let v_major
-    var version = "0.1.1"
+    public var version = "0.2.0"
     
 }
 
@@ -15,7 +15,7 @@ public class DeviceUtil {
     ///   - hexString: Hex String, EX: "#ff0000"
     ///   - alpha: alpha value is 0~1.0
     /// - Returns: created color
-    class func colorFromHexString(_ hexString : String, alpha: CGFloat = 1.0) ->UIColor{
+    private class func colorFrom(hex hexString : String, alpha: CGFloat = 1.0) ->UIColor{
         let r,g,b : CGFloat
         let offset = hexString.hasPrefix("#") ? 1 : 0
         let start = hexString.index(hexString.startIndex, offsetBy: offset)
@@ -31,8 +31,12 @@ public class DeviceUtil {
         return UIColor(red: 0, green: 0, blue: 0, alpha: alpha)//Default Color
     }
     
-    class func colorFrom(hexStr hexString : String) -> UIColor {
-        return .red
+    /// RazeColor
+    public static var razeColor: UIColor {
+        self.colorFrom(hex: "006736", alpha: 1.0)
     }
-    
 }
+//version
+//0.1.0 : first API
+//0.1.1 : provide Hex String to UIColor
+//0.2.0 : provide pre-define color.
