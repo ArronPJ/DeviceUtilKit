@@ -24,6 +24,7 @@
 		ED73850926B19D760012BA36 /* DeviceViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73850826B19D760012BA36 /* DeviceViewUtil.swift */; };
 		ED73850B26B1A72B0012BA36 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73850A26B1A72B0012BA36 /* Color.swift */; };
 		ED73850D26B1A8AC0012BA36 /* DeviceUtilNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73850C26B1A8AC0012BA36 /* DeviceUtilNetworkingTests.swift */; };
+		ED73850F26B1A97C0012BA36 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73850E26B1A97C0012BA36 /* Networking.swift */; };
 		OBJ_23 /* DeviceUtilKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DeviceUtilKit.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_41 /* DeviceUtilColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DeviceUtilColorTests.swift */; };
@@ -55,6 +56,7 @@
 		ED73850826B19D760012BA36 /* DeviceViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewUtil.swift; sourceTree = "<group>"; };
 		ED73850A26B1A72B0012BA36 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		ED73850C26B1A8AC0012BA36 /* DeviceUtilNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtilNetworkingTests.swift; sourceTree = "<group>"; };
+		ED73850E26B1A97C0012BA36 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		OBJ_12 /* DeviceUtilColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtilColorTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				OBJ_9 /* DeviceUtilKit.swift */,
 				ED73850A26B1A72B0012BA36 /* Color.swift */,
+				ED73850E26B1A97C0012BA36 /* Networking.swift */,
 				ED73850826B19D760012BA36 /* DeviceViewUtil.swift */,
 			);
 			name = DeviceUtilKit;
@@ -236,6 +239,7 @@
 				ED73850926B19D760012BA36 /* DeviceViewUtil.swift in Sources */,
 				OBJ_23 /* DeviceUtilKit.swift in Sources */,
 				ED73850B26B1A72B0012BA36 /* Color.swift in Sources */,
+				ED73850F26B1A97C0012BA36 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

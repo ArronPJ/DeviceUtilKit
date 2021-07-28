@@ -11,8 +11,25 @@ import XCTest
 final class DeviceUtilNetworkingTests: XCTestCase {
 
     func testNetworkAPI1() throws {
-        
+        let manager = DeviceUtil.Networking.Manager()
+        let expectation = XCTestExpectation(description: "Call for data")
+        guard let url = URL(string: "https://raywenderlich.com") else {
+            return XCTFail("Could not create URL properly")
+        }
+        manager.loadData(from: url){ result in
+            expectation.fulfill()
+            switch result {
+            case .success(let returnedData):
+                XCTAssertNotNil(returnedData, "Response data is nil")
+            case .failure(let error):
+                XCTFail(error?.localizedDescription ?? "error forming error result")
+            }
+        }
+        wait(for: [expectation], timeout: 5)
     }
+    static var allTests = [
+        ("testNetworkAPI1", testNetworkAPI1),
+    ]
 //    override func setUpWithError() throws {
 //        // Put setup code here. This method is called before the invocation of each test method in the class.
 //    }

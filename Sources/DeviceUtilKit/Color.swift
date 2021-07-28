@@ -10,7 +10,7 @@ import UIKit //UIColor
 
 extension DeviceUtil {
 //public class DeviceUtil {
-    public class Color{
+    public class Color {
         /// Using Hex String with hash to create UIColor with alpha translution.
         /// - Warning: The "#" symbol is stripped from beginning of the string.
         /// - Parameters:
