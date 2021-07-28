@@ -35,3 +35,8 @@ swift package generate-xcodeproj
 
 - add tag to Github Repo. Ex: 0.1.1
 - in app project , open Xcode -> File -> Swift packages -> Add package Dependency
+
+### CLI-TEST:
+```
+xcodebuild test -scheme "DeviceUtilKitTests" -project DeviceUtilKit.xcodeproj -destination "platform=iOS Simulator,name=iPhone 8 Plus"
+```
