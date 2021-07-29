@@ -11,6 +11,8 @@ public protocol NetworkSession {
 
     
     func get(from url: URL, completionHandler: @escaping (Data?, Error?) -> Void )
+    
+    func post(with request: URLRequest, completionHandler: @escaping (Data?, Error?) -> Void )
 }
 
 extension URLSession : NetworkSession{
@@ -21,6 +23,12 @@ extension URLSession : NetworkSession{
         }
         task.resume()
     }
+    public func post(with request: URLRequest, completionHandler: @escaping (Data?, Error?) -> Void ) {
+        let task = dataTask(with: request) { data, _, error in
+            completionHandler(data, error)
+        }
+        task.resume()
+     }
 }
 
 extension DeviceUtil {
@@ -56,6 +64,32 @@ extension DeviceUtil {
                     let result = data.map(NetworkResult<Data>.success) ?? .failure(error)
                     completionHandler(result)
                 }
+            }
+            
+            /// Calls to Send data to service endpoint
+            /// - Warning: Make sure URL accept HTTP POST method
+            /// - Parameters:
+            ///   - url: location of service endpoint
+            ///   - body: Codable Data
+            ///   - completionHandler: handle result and status
+            public func sendData<I: Codable>(to url : URL,
+                                 body : I,
+                                 completionHandler: @escaping (NetworkResult<Data>) -> Void)
+            {
+                var request = URLRequest(url: url)
+                do{
+                    let httpBody = try JSONEncoder().encode(body)
+                    request.httpBody = httpBody
+                    request.httpMethod = "POST"
+                    
+                    session.post(with: request) { data, error in
+                        let result = data.map(NetworkResult<Data>.success) ?? .failure(error)
+                        completionHandler(result)
+                    }
+                } catch let error {
+                    return completionHandler(.failure(error))
+                }
+                
             }
             
         }
