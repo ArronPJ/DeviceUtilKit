@@ -45,6 +45,7 @@ extension DeviceUtil {
     }
     
 }
+//PART1
 extension UIColor {
     var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
         var red: CGFloat = 0
@@ -55,4 +56,29 @@ extension UIColor {
 
         return (red, green, blue, alpha)
     }
+}
+//PART2
+
+extension UIColor {
+    
+    convenience init(netHex:Int) {
+        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
+    }
+    //let darkBlue = UIColor(hex: 0x191970, 1)
+    convenience init(hex: UInt32, alpha: Double) {
+        let divisor = Float(255)
+        let red     = Float((hex & 0xFF0000) >> 16) / divisor
+        let green   = Float((hex & 0x00FF00) >> 8) / divisor
+        let blue    = Float(hex & 0x0000FF) / divisor
+        self.init(red: CGFloat(red), green: CGFloat(green), blue: CGFloat(blue), alpha: CGFloat(alpha))
+    }
+    
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+    }
+    static let colorAuthBackground = UIColor(netHex: 0xefeff4)//#EFEFF4
+
 }
