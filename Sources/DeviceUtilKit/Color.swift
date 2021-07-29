@@ -45,6 +45,21 @@ extension DeviceUtil {
     }
     
 }
+//PART3
+extension UIColor {
+
+    static let demoRed = UIColor(netHex: 0xd4553d)
+    static let demoBlack = UIColor(netHex: 0x595959)
+    static let demoDeepBlack = UIColor(netHex: 0x222222)
+    
+    static let demoGreen = UIColor(netHex: 0xAED581)
+    static let demoBlue = UIColor(netHex: 0x15a9e7)
+    static let demoButtonBlue = UIColor(netHex: 0x157efb)
+    static let demoWhite = UIColor(netHex: 0xffffff)
+    static let demoLightGray = UIColor(netHex: 0xdddddd)
+    static let demoGray = UIColor(netHex: 0xaaaaaa)
+    static let demoDarkGray = UIColor(netHex: 0x888888)
+}
 //PART1
 extension UIColor {
     var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
