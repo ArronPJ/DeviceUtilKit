@@ -12,11 +12,12 @@ import SwiftUI
 //Color
 
 //SwiftUI
+@available(iOS 13, *)
 extension UIColor {
     /// The SwiftUI color associated with the receiver.
     var suColor: Color { Color(self) }
 }
-
+@available(iOS 13, *)
 extension Color {
     init(uiColor: UIColor) {
         self.init(red: Double(uiColor.rgba.red),
