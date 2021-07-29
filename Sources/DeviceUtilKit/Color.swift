@@ -48,6 +48,7 @@ extension DeviceUtil {
 //PART3
 extension UIColor {
 
+    //Demo主題色
     static let demoRed = UIColor(netHex: 0xd4553d)
     static let demoBlack = UIColor(netHex: 0x595959)
     static let demoDeepBlack = UIColor(netHex: 0x222222)
@@ -59,6 +60,26 @@ extension UIColor {
     static let demoLightGray = UIColor(netHex: 0xdddddd)
     static let demoGray = UIColor(netHex: 0xaaaaaa)
     static let demoDarkGray = UIColor(netHex: 0x888888)
+    
+    //DKM 主題色
+    static let dkmSummaryColor = UIColor(netHex: 0xf3f3f3)
+    static let dkmThemeColor = UIColor(netHex: 0xf39800)
+    static let dkmRedNormal = UIColor(netHex: 0xd4553d)
+    static let dkmRedTouchDown = UIColor(netHex: 0xb73e28)
+    static let dkmBlackNormal = UIColor(netHex: 0x595959)
+    static let dkmBlackTouchDown = UIColor(netHex: 0x3c3c3c)
+    static let dkmGrayLine = UIColor(netHex: 0xa0a0a0)
+    static let dkmCarGray = UIColor(netHex: 0xefefef)
+    
+    //PUPU系列色
+    static let colorGreen = UIColor(netHex: 0xAED581)
+    static let colorBlue = UIColor(netHex: 0x15a9e7)
+    static let colorButtonBlue = UIColor(netHex: 0x157efb)
+    static let colorWhite = UIColor(netHex: 0xffffff)
+    static let colorBlack = UIColor(netHex: 0x222222)
+    static let colorLightGray = UIColor(netHex: 0xdddddd)
+    static let colorGray = UIColor(netHex: 0xaaaaaa)
+    static let colorDarkGray = UIColor(netHex: 0x888888)
 }
 //PART1
 extension UIColor {
