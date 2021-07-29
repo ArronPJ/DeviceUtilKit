@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		ED6FC64726B27BE60091BE87 /* FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6FC64626B27BE60091BE87 /* FoundationExtension.swift */; };
 		ED6FC64926B281170091BE87 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6FC64826B281170091BE87 /* UIViewExtension.swift */; };
+		ED6FC64B26B287630091BE87 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6FC64A26B287630091BE87 /* UIImageExtension.swift */; };
 		ED73850926B19D760012BA36 /* DeviceViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73850826B19D760012BA36 /* DeviceViewUtil.swift */; };
 		ED73850B26B1A72B0012BA36 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73850A26B1A72B0012BA36 /* Color.swift */; };
 		ED73850D26B1A8AC0012BA36 /* DeviceUtilNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73850C26B1A8AC0012BA36 /* DeviceUtilNetworkingTests.swift */; };
@@ -57,6 +58,7 @@
 		ED6FC64526B266650091BE87 /* DeviceUtilKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DeviceUtilKit.podspec; sourceTree = "<group>"; };
 		ED6FC64626B27BE60091BE87 /* FoundationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtension.swift; sourceTree = "<group>"; };
 		ED6FC64826B281170091BE87 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		ED6FC64A26B287630091BE87 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		ED73850726B19C260012BA36 /* how_to_create.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = how_to_create.md; sourceTree = "<group>"; };
 		ED73850826B19D760012BA36 /* DeviceViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewUtil.swift; sourceTree = "<group>"; };
 		ED73850A26B1A72B0012BA36 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				ED73850826B19D760012BA36 /* DeviceViewUtil.swift */,
 				ED6FC64626B27BE60091BE87 /* FoundationExtension.swift */,
 				ED6FC64826B281170091BE87 /* UIViewExtension.swift */,
+				ED6FC64A26B287630091BE87 /* UIImageExtension.swift */,
 			);
 			name = DeviceUtilKit;
 			path = Sources/DeviceUtilKit;
@@ -245,6 +248,7 @@
 			files = (
 				ED6FC64926B281170091BE87 /* UIViewExtension.swift in Sources */,
 				ED73850926B19D760012BA36 /* DeviceViewUtil.swift in Sources */,
+				ED6FC64B26B287630091BE87 /* UIImageExtension.swift in Sources */,
 				OBJ_23 /* DeviceUtilKit.swift in Sources */,
 				ED73850B26B1A72B0012BA36 /* Color.swift in Sources */,
 				ED6FC64726B27BE60091BE87 /* FoundationExtension.swift in Sources */,
