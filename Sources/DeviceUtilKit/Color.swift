@@ -48,6 +48,16 @@ extension DeviceUtil {
 //PART3
 extension UIColor {
 
+    
+    //DemoBlud
+    //REF: https://hotpot.ai/color-generator?s=tools
+    static let demoBlue1 = UIColor(netHex: 0x6dade0)
+    static let demoBlue2 = UIColor(netHex: 0x6ddbe0)
+    static let demoBlue3 = UIColor(netHex: 0x6dc4e0)
+    static let demoBlue4 = UIColor(netHex: 0x6dade0)
+    static let demoBlue5 = UIColor(netHex: 0x6d96e0)
+    static let demoBlue6 = UIColor(netHex: 0x6d7fe0)
+    
     //Demo主題色
     static let demoRed = UIColor(netHex: 0xd4553d)
     static let demoBlack = UIColor(netHex: 0x595959)
