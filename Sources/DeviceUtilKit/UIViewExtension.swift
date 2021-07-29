@@ -8,6 +8,58 @@
 
 import UIKit
 
+
+//App but not test yet.
+
+// A Class handle UI Navigation
+public class AppRouterHelper {
+    
+    /// Acquire UINavigationController's reference.
+    /// Shoulde be setup by "setupNC" at "viewDidLoad" in root View Controller.
+    var currentNC_ : UINavigationController? = nil
+    
+    public static let shared: AppRouterHelper = {
+        let instance = AppRouterHelper()
+        return instance
+    }()
+    /// Setup function , require UINavigationController
+    public func setupNC(_ currentNC: UINavigationController){
+        
+        if(currentNC_ == nil){
+            currentNC_ = currentNC
+            self.currentNC_?.navigationBar.tintColor = .white
+            self.currentNC_?.navigationBar.barTintColor = .demoDeepBlack
+        }
+    }
+    
+    public func openLiveView(){
+        //LiveSingleVC
+        //let liveVC = AppStoryboard.LiveView.getVC(vcClass: LiveSingleVC.self)
+        //self.currentNC_?.pushViewController(liveVC, animated: true)
+        
+    }
+    public func openPlaybackView(){
+        
+        //self.currentNC_?.pushViewController(forgetPwdVC, animated: true)
+    }
+}
+enum AppStoryboard : String {
+    /// SOP01 Define New Storyboard. (adding case)
+    case Main = "Main"
+    //case LiveView = "LiveView"
+    //case PlaybackView = "PlaybackView"
+    
+    var instance : UIStoryboard {
+        return UIStoryboard(name: self.rawValue, bundle: Bundle.main)
+    }
+    /// Using UIClass to get UIVC.
+    //透過UIClass本身取得該Storyboard當中的該 ViewController Class.
+    func getVC(vcClass : UIViewController.Type) -> UIViewController {
+        return self.instance.instantiateViewController(withIdentifier: vcClass.storyboardID)
+    }
+}
+
+
 //Helper for Navigation, Storyboard , and Keyboard
 extension UIViewController {
     
