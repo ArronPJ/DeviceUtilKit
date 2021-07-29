@@ -13,7 +13,9 @@ final class DeviceUtilNetworkingTests: XCTestCase {
     func testNetworkAPI1() throws {
         let manager = DeviceUtil.Networking.Manager()
         let expectation = XCTestExpectation(description: "Call for data")
-        guard let url = URL(string: "https://raywenderlich.com") else {
+        let test_url1 = "https://picsum.photos/v2/list"
+        
+        guard let url = URL(string: test_url1) else {
             return XCTFail("Could not create URL properly")
         }
         manager.loadData(from: url){ result in
