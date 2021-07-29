@@ -7,6 +7,22 @@
 
 import Foundation
 
+public protocol NetworkSession {
+
+    
+    func get(from url: URL, completionHandler: @escaping (Data?, Error?) -> Void )
+}
+
+extension URLSession : NetworkSession{
+    
+    public func get(from url: URL, completionHandler: @escaping (Data?, Error?) -> Void) {
+        let task = dataTask(with: url){ data, _, error in
+            completionHandler(data, error)
+        }
+        task.resume()
+    }
+}
+
 extension DeviceUtil {
 
     
@@ -17,21 +33,24 @@ extension DeviceUtil {
         /// <#Description#>
         public class Manager {
             public init(){}
-            private let session = URLSession.shared
+            internal var session : NetworkSession = URLSession.shared
             
             public enum NetworkResult<Value> {
                 case success(Value)
                 case failure(Error?)
             }
             
+            /// Calls to the live internet to retrieve Data from URL
+            /// - Parameters:
+            ///   - url: the location of target data retrieve
+            ///   - completionHandler: Return result object with status
             public func loadData(from url: URL,
                                 completionHandler: @escaping (NetworkResult<Data>) -> Void)
             {
-                let task = session.dataTask(with: url) { data, response, error in
+                session.get(from: url) { data, error in
                     let result = data.map(NetworkResult<Data>.success) ?? .failure(error)
                     completionHandler(result)
                 }
-                task.resume()
             }
             
         }
