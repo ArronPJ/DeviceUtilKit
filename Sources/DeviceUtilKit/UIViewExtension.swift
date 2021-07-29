@@ -91,6 +91,22 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+// MARK: - Add a UIVC into other UIVC
+extension UIViewController {
+    
+    /// addChildVC : function to add a UIViewController into another UIViewController.
+    /// This function could use when ViewDidLoad , setup process
+    /// EX: setup UberSignatureVC into my custom VC with self.view as parentView
+    /// - Parameters:
+    ///   - childVC: the VC inside.
+    ///   - toParentView: the VC as container.
+    func addChildVC(_ childVC: UIViewController, toParentView: UIView) {
+        childVC.beginAppearanceTransition(true, animated: false)
+        toParentView.addSubview(childVC.view)
+        childVC.endAppearanceTransition()
+        childVC.didMove(toParent: self)
+    }
+}
 
 
 // source: https://github.com/freak4pc/UIView-Positioning
