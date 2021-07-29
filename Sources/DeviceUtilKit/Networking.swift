@@ -30,11 +30,16 @@ extension DeviceUtil {
     public class Networking {
         
         
-        /// <#Description#>
+        /// Responsible for handling all network APIs
+        /// - Warning: Must create before using any public APIs
         public class Manager {
             public init(){}
+            
+            /// Session is internal for test but not accessible by User of framework.
             internal var session : NetworkSession = URLSession.shared
             
+            
+            /// Generics Public enum to put NetworkResult with Status
             public enum NetworkResult<Value> {
                 case success(Value)
                 case failure(Error?)
