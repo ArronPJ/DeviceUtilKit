@@ -52,6 +52,7 @@
 /* Begin PBXFileReference section */
 		"DeviceUtilKit::DeviceUtilKit::Product" /* DeviceUtilKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeviceUtilKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DeviceUtilKit::DeviceUtilKitTests::Product" /* DeviceUtilKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DeviceUtilKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6FC64526B266650091BE87 /* DeviceUtilKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DeviceUtilKit.podspec; sourceTree = "<group>"; };
 		ED73850726B19C260012BA36 /* how_to_create.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = how_to_create.md; sourceTree = "<group>"; };
 		ED73850826B19D760012BA36 /* DeviceViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewUtil.swift; sourceTree = "<group>"; };
 		ED73850A26B1A72B0012BA36 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -119,9 +120,10 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
+				ED6FC64526B266650091BE87 /* DeviceUtilKit.podspec */,
 				ED73850626B19C260012BA36 /* docs */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
@@ -129,7 +131,6 @@
 				OBJ_14 /* Products */,
 				OBJ_17 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -218,7 +219,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
