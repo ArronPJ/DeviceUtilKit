@@ -25,7 +25,7 @@ pod spec lint
 pod trunk register princejar@gmail.com 'arronpj' --description='macOS MPBY15'
 ```
 
-- Upload Trunk
+- Upload Trunk (push source code to Github before upload...)
 
 ```
 pod trunk push DeviceUtilKit.podspec
