@@ -11,8 +11,11 @@ import SwiftUI
 @available(iOS 13, *)
 extension Color {
     
-    public static var backgroundColor : Color {
+    public static var backgroundLColor : Color {
         Color(UIColor.rwBGLight)
+    }
+    public static var backgroundDColor : Color {
+        Color(UIColor.rwBGDark)
     }
     
     public static var primaryButtonBackground : Color {

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DeviceUtilKit"
-  spec.version      = "0.3.9"
+  spec.version      = "0.3.10"
   spec.summary      = "A package to share swift code and simply building app of DeviceUtilKit."
 
   # This description is used to generate tags and improve search results.

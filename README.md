@@ -27,3 +27,4 @@ A description of this package.
 - 0.3.7 : Add Dark / Light Mode.
 - 0.3.8 : extension Color for SwiftUI
 - 0.3.9 : change accessibility
+- 0.3.10 : background with 2 mode.
