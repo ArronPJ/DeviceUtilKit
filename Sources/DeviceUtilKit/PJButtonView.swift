@@ -10,9 +10,18 @@ import SwiftUI
 //import DeviceUtilKit
 @available(iOS 13, *)
 public enum PJButtonType {
-    case primary
-    case secondary
-    case destructive
+    case primary(withArrow: Bool)
+    case secondary(withArrow: Bool)
+    case destructive(withArrow: Bool)
+    
+    var hasArrow : Bool {
+        switch self {
+        case .primary(let hasArrow),
+             .secondary(let hasArrow),
+             .destructive(let hasArrow):
+            return hasArrow
+        }
+    }
     
     var color : Color {
         switch self {
@@ -29,9 +38,15 @@ public enum PJButtonType {
 //arrow.right.square.fill
 @available(iOS 13, *)
 public struct PJButtonView : View {
+    private struct SizeKey : PreferenceKey {
+        static func reduce(value: inout CGSize?, nextValue: ()-> CGSize?){
+            value = value ?? nextValue()
+        }
+    }
     var title : String
     var type : PJButtonType
     var callback : () -> Void
+    @State private var height : CGFloat?
     public init(title : String, type : PJButtonType, callback : @escaping ()-> Void) {
         self.title = title
         self.type = type
@@ -45,21 +60,29 @@ public struct PJButtonView : View {
                     Text(title)
                         .font(.uiButtonLabel)
                         .foregroundColor(Color.buttonText)
-                        .padding(15)
+                        .padding(15).background(
+                            GeometryReader { proxy in
+                                Color.clear.preference(key: SizeKey.self, value: proxy.size)
+                            })
                     Spacer()
                 }
-                HStack{
-                    Spacer()
-                    Image(systemName: "arrow.right")
-                        .font(Font.system(size: 14, weight: .bold))
-                        .foregroundColor(type.color).frame(width:50, height: 50)
-                        .background(Color.white.cornerRadius(9).padding(12))
+                if type.hasArrow {
+                    HStack{
+                        Spacer()
+                        Image(systemName: "arrow.right")
+                            .font(Font.system(size: 14, weight: .bold))
+                            .foregroundColor(type.color).frame(width:height, height: height)
+                            .background(Color.white.cornerRadius(9).padding(12))
+                    }
                 }
             }
         }
+        .frame(height: height)
     .background(
         RoundedRectangle(cornerRadius: 9).fill(type.color)
-        )
+        ).onPreferenceChange(SizeKey.self) { size in
+            self.height = size?.height
+        }
     }
 }
 
@@ -82,9 +105,9 @@ struct PJButtonView_Preview : PreviewProvider {
     }
     static var buttons : some View {
         VStack(spacing: 20){
-            PJButtonView(title: "Pri", type: .primary, callback: { print("!! button1!!") })
-            PJButtonView(title: "2nd", type: .secondary, callback: { print("!! button2!!") })
-            PJButtonView(title: "Cancel", type: .destructive, callback: { print("!! Cancel!!") })
+            PJButtonView(title: "Pri", type: .primary(withArrow: true), callback: { print("!! button1!!") })
+            PJButtonView(title: "2nd", type: .secondary(withArrow: false), callback: { print("!! button2!!") })
+            PJButtonView(title: "Cancel", type: .destructive(withArrow: true), callback: { print("!! Cancel!!") })
         }.padding(20).background(Color.backgroundLColor).previewLayout(.sizeThatFits)
     }
 }

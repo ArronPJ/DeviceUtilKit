@@ -31,4 +31,5 @@ A description of this package.
 - 0.3.11 : add PJButtonView for SwiftUI
 - 0.3.12 : add public init for outside project can access.
 - 0.3.13 : fix bug for initializer
+- 0.3.14 : add option for button arrow.
 
