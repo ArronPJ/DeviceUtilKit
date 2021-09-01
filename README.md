@@ -5,6 +5,7 @@ A description of this package.
 ## Intro:
 
 - [Support Cocoapod](https://cocoapods.org/pods/DeviceUtilKit)
+- include SwiftUI (iOS13 version)
 
 ### More Documents:
 
