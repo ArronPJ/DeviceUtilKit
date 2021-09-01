@@ -48,7 +48,10 @@ extension DeviceUtil {
 //PART3
 extension UIColor {
 
-    
+    //RWUI
+    public static let rwGreen = UIColor(netHex: 0x158443)
+    public static let rwGray = UIColor(netHex: 0x3B4048)
+    public static let rwRed = UIColor(netHex: 0xCF3B2B)
     //DemoBlud
     //REF: https://hotpot.ai/color-generator?s=tools
     public static let demoBlue1 = UIColor(netHex: 0x6dade0)
