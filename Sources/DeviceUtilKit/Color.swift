@@ -96,6 +96,7 @@ extension UIColor {
     public static let colorGray = UIColor(netHex: 0xaaaaaa)
     public static let colorDarkGray = UIColor(netHex: 0x888888)
 }
+
 //PART1
 extension UIColor {
     var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
