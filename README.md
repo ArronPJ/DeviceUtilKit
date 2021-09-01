@@ -29,3 +29,4 @@ A description of this package.
 - 0.3.9 : change accessibility
 - 0.3.10 : background with 2 mode.
 - 0.3.11 : add PJButtonView for SwiftUI
+- 0.3.12 : add public init for outside project can access.

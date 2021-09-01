@@ -4,7 +4,7 @@ import Foundation
 //
 public class DeviceUtilKit {
     //static let v_major
-    public var version = "0.3.11"
+    public var version = "0.3.12"
     
     public static var platform : String {
         var result = ""

@@ -32,6 +32,7 @@ public struct PJButtonView : View {
     var title : String
     var type : PJButtonType
     var callback : () -> Void
+    public init() {}
     public var body : some View {
         Button(action : { self.callback() }){
             ZStack(alignment: .center){
