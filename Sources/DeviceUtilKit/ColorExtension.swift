@@ -11,23 +11,23 @@ import SwiftUI
 @available(iOS 13, *)
 extension Color {
     
-    static var backgroundColor : Color {
+    public static var backgroundColor : Color {
         Color(UIColor.rwBGLight)
     }
     
-    static var primaryButtonBackground : Color {
+    public static var primaryButtonBackground : Color {
         Color(UIColor.rwGreen)
     }
     
-    static var secondaryButtonBackground : Color {
+    public static var secondaryButtonBackground : Color {
         Color(UIColor.rwGray)
     }
     
-    static var destructiveButtonBackground : Color {
+    public static var destructiveButtonBackground : Color {
         Color(UIColor.rwRed)
     }
     
-    static var buttonText: Color {
+    public static var buttonText: Color {
         Color(UIColor.white)
     }
 }
