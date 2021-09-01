@@ -23,4 +23,5 @@ A description of this package.
 - 0.3.1 : provide loadData API with Mock
 - 0.3.2 : provide sendData API with Mock
 - 0.3.3 : support CocoaPods package management
-- 0.3.6 : support CocoaPods package management
+- 0.3.6 : Add Color for RW
+- 0.3.7 : Add Dark / Light Mode.

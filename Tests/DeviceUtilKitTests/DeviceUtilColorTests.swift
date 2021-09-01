@@ -6,7 +6,7 @@ final class DeviceUtilColorTests: XCTestCase {
     
     func testVersionEqual() {
         let v = DeviceUtilKit().version
-        XCTAssertEqual(v, "0.3.6")
+        XCTAssertEqual(v, "0.3.7")
     }
 
     func testRazeColorEqual(){

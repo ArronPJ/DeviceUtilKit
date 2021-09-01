@@ -49,9 +49,11 @@ extension DeviceUtil {
 extension UIColor {
 
     //RWUI
-    public static let rwGreen = UIColor(netHex: 0x158443)
-    public static let rwGray = UIColor(netHex: 0x3B4048)
-    public static let rwRed = UIColor(netHex: 0xCF3B2B)
+    public static let rwBGDark = UIColor(netHex: 0x333333)   // Backgroud for Dark
+    public static let rwBGLight = UIColor(netHex: 0xF2F6FA)   // Backgroud for Light
+    public static let rwGreen = UIColor(netHex: 0x158443)   //Primary
+    public static let rwGray = UIColor(netHex: 0x3B4048)    //Secondary
+    public static let rwRed = UIColor(netHex: 0xCF3B2B)     //Destructive
     //DemoBlud
     //REF: https://hotpot.ai/color-generator?s=tools
     public static let demoBlue1 = UIColor(netHex: 0x6dade0)
