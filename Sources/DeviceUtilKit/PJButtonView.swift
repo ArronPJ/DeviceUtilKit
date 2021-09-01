@@ -9,7 +9,7 @@
 import SwiftUI
 //import DeviceUtilKit
 @available(iOS 13, *)
-enum PJButtonType {
+public enum PJButtonType {
     case primary
     case secondary
     case destructive
@@ -32,7 +32,11 @@ public struct PJButtonView : View {
     var title : String
     var type : PJButtonType
     var callback : () -> Void
-    public init() {}
+    public init(title : String, type : PJButtonType, callback : @escaping ()-> Void) {
+        self.title = title
+        self.type = type
+        self.callback = callback
+    }
     public var body : some View {
         Button(action : { self.callback() }){
             ZStack(alignment: .center){
